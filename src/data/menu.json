@@ -1,0 +1,375 @@
+{
+    "data": [
+        {
+            "title": "Dashboard",
+            "title_ar": "الرئيسة",
+            "icon": "dashboard-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "path": "/dashboard",
+            "super": true
+        },
+        {
+            "title": "Appointments",
+            "title_ar": "المواعيد",
+            "icon": "clipboard-svg",
+            "type": "sub",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Appointments",
+            "children": [
+                {
+                    "title": "View Appointments",
+                    "title_ar": "مشاهدة المواعيد",
+                    "type": "link",
+                    "path": "/appointment/view"
+                },
+                {
+                    "title": "Appointment History",
+                    "title_ar": "تاريخ التعيين",
+                    "type": "link",
+                    "path": "/appointment/history"
+                },
+                {
+                    "title": "Appointment Instructions",
+                    "title_ar": "تعليمات الموعد",
+                    "type": "link",
+                    "path": "/appointment/instructions"
+                }
+            ]
+        },
+        {
+            "title": "Users",
+            "title_ar": "المستخدمون",
+            "icon": "user-fill-svg",
+            "type": "sub",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "User Management",
+            "children": [
+                {
+                    "title": "Patient Management",
+                    "title_ar": "التعامل مع المرضى",
+                    "type": "link",
+                    "path": "/users/patient"
+                },
+                {
+                    "title": "Physician Management",
+                    "title_ar": "إدارة الطبيب",
+                    "type": "link",
+                    "path": "/users/physician"
+                },
+                {
+                    "title": "Staff Management",
+                    "title_ar": "إدارة الموظفين",
+                    "type": "sub",
+                    "dynamicSub": true,
+                    "badgeType": "primary",
+                    "badgeValue": "",
+                    "active": false,
+                    "disabled": false,
+                    "children": []
+                },
+                {
+                    "title": "Add Staff Member",
+                    "title_ar": "إدارة الموظفين",
+                    "type": "link",
+                    "path": "/users/update/staff"
+                }
+            ]
+        },
+        {
+            "title": "Promotions",
+            "title_ar": "الترقيات",
+            "icon": "bell-fill-svg",
+            "type": "sub",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Promotions and Loyalty Points",
+            "children": [
+                {
+                    "title": "Promo Groups",
+                    "title_ar": "مجموعات ترويجية",
+                    "type": "sub",
+                    "badgeType": "primary",
+                    "badgeValue": "",
+                    "active": false,
+                    "disabled": false,
+                    "children": [
+                        {
+                            "title": "List",
+                            "title_ar": "قائمة",
+                            "type": "link",
+                            "path": "/promotions/groups/list"
+                        },
+                        {
+                            "title": "Create",
+                            "title_ar": "خلق",
+                            "type": "link",
+                            "path": "/promotions/groups/create"
+                        }
+                    ]
+                },
+                {
+                    "title": "Promo Codes",
+                    "title_ar": "الرموز الترويجية",
+                    "type": "sub",
+                    "badgeType": "primary",
+                    "badgeValue": "",
+                    "active": false,
+                    "disabled": false,
+                    "children": [
+                        {
+                            "title": "List",
+                            "title_ar": "قائمة",
+                            "type": "link",
+                            "path": "/promotions/list"
+                        },
+                        {
+                            "title": "Create",
+                            "title_ar": "خلق",
+                            "type": "link",
+                            "path": "/promotions/create"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Medications",
+            "title_ar": "الأدوية",
+            "icon": "pill-fill-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Medications",
+            "path": "/medication-refills"
+        },
+        {
+            "title": "Insurance Management",
+            "title_ar": "إدارة التأمين",
+            "icon": "shield-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Insurance Management",
+            "path": "/insurance-management"
+        },
+        {
+            "title": "Speciality Management",
+            "title_ar": "إدارة التخصص",
+            "icon": "symptom-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Specialities",
+            "path": "/specialities-management"
+        },
+        {
+            "title": "Banner Management",
+            "title_ar": "التثقيف الصحي",
+            "type": "sub",
+            "icon": "insurance-svg",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Banner Management",
+            "children": [
+                {
+                    "title": "List",
+                    "title_ar": "قائمة",
+                    "type": "link",
+                    "path": "/banner-management/list"
+                },
+                {
+                    "title": "Create",
+                    "title_ar": "خلق",
+                    "type": "link",
+                    "path": "/banner-management/create"
+                }
+            ]
+        },
+        {
+            "title": "Health Education",
+            "title_ar": "التثقيف الصحي",
+            "type": "sub",
+            "icon": "atom-fill-svg",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Health Education",
+            "children": [
+                {
+                    "title": "List",
+                    "title_ar": "قائمة",
+                    "type": "link",
+                    "path": "/health-education/list"
+                },
+                {
+                    "title": "Create",
+                    "title_ar": "خلق",
+                    "type": "link",
+                    "path": "/health-education/create"
+                }
+            ]
+        },
+        {
+            "title": "CMS Pages",
+            "title_ar": "صفحات إدارة المحتوى",
+            "type": "sub",
+            "icon": "clipboard-svg",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "CMS Pages",
+            "children": [
+                {
+                    "title": "List",
+                    "title_ar": "قائمة",
+                    "type": "link",
+                    "path": "/cms-pages/list"
+                },
+                {
+                    "title": "Create",
+                    "title_ar": "خلق",
+                    "type": "link",
+                    "path": "/cms-pages/create"
+                }
+            ]
+        },
+        {
+            "title": "Services & Packages",
+            "title_ar": "الخدمات والحزم",
+            "type": "link",
+            "icon": "briefcase-fill-svg",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Services & Packages",
+            "path": "/services-packages/list"
+        },
+        {
+            "title": "Family Members",
+            "title_ar": "أفراد الأسرة",
+            "icon": "family-fill-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Family Members",
+            "path": "/family-members"
+        },
+        {
+            "title": "Family Relations",
+            "title_ar": "علاقات الأسرة",
+            "icon": "family-fill-svg",
+            "type": "sub",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Family Members",
+            "children": [
+                {
+                    "title": "List",
+                    "title_ar": "قائمة",
+                    "type": "link",
+                    "path": "/family-relations/list"
+                },
+                {
+                    "title": "Create",
+                    "title_ar": "خلق",
+                    "type": "link",
+                    "path": "/family-relations/create"
+                }
+            ]
+        },
+        {
+            "title": "Transactions",
+            "title_ar": "المعاملات",
+            "icon": "cash-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "path": "/transactions"
+        },
+        {
+            "title": "Roles & Permissions",
+            "title_ar": "الأدوار والأذونات",
+            "icon": "shield-svg",
+            "type": "link",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Roles & Permissions",
+            "super": true,
+            "path": "/roles-permissions"
+        },
+        {
+            "title": "Reports",
+            "title_ar": "تقارير",
+            "type": "sub",
+            "icon": "clipboard-svg",
+            "badgeType": "primary",
+            "badgeValue": "",
+            "active": false,
+            "disabled": false,
+            "permission": "Reports Management",
+            "children": [
+                {
+                    "title": "Physician Rating",
+                    "title_ar": "تقييم الطبيب",
+                    "type": "link",
+                    "path": "/reports/physician-rating"
+                },
+                {
+                    "title": "New Patient",
+                    "title_ar": "مريض جديد",
+                    "type": "link",
+                    "path": "/reports/new-patient-request"
+                },
+                {
+                    "title": "Insurance Request",
+                    "title_ar": "طلب التأمين",
+                    "type": "link",
+                    "path": "/reports/insurance-request"
+                },
+                {
+                    "title": "Physician Details",
+                    "title_ar": "تفاصيل الطبيب",
+                    "type": "link",
+                    "path": "/reports/physician-report"
+                },
+                {
+                    "title": "Medication Refills",
+                    "title_ar": "إعادة تعبئة الأدوية",
+                    "type": "link",
+                    "path": "/reports/medication-refills"
+                }
+            ]
+        }
+    ]
+}
